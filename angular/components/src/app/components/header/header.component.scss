@@ -1,0 +1,13 @@
+.items {
+	padding: 14px;
+}
+  
+.head-spacer {
+	flex: 1 1 auto;
+}
+
+@media(max-width: 800px) {
+	.items{
+		display: none;
+	}
+}
