@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ValidatorService } from 'src/app/services/validator.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -6,10 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
+  
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
+
+  pwFormControl = new FormControl('', [
+    Validators.required,
+    Validators.minLength(5)
+  ]);
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  submitLogin() {
+
+    // Validation
+
+    // Send to server
+
+  }
 }
