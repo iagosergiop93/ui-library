@@ -17,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContainerComponent } from './components/container/container.component';
 import { LoginPageComponent } from './components/login/login-page/login-page.component';
 import { HeaderResponsiveComponent } from './components/header-responsive/header-responsive.component';
+import { SimpleLineChartComponent } from './components/charts/simple-line-chart/simple-line-chart.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderResponsiveComponent } from './components/header-responsive/header
     HeaderComponent,
     ContainerComponent,
     LoginPageComponent,
-    HeaderResponsiveComponent
+    HeaderResponsiveComponent,
+    SimpleLineChartComponent
   ],
   imports: [
     MatInputModule,
