@@ -1,0 +1,14 @@
+<mat-toolbar>
+    <button mat-button (click)="toggleSidebar()">
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">menu</mat-icon>
+    </button>
+    <span>{{ title }}</span>
+    <span class="head-spacer"></span>
+    <button mat-button *ngFor="let item of items" class="items">{{ item.name }}</button>
+    <button mat-button>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+    </button>
+    <button mat-button>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+    </button>
+</mat-toolbar>

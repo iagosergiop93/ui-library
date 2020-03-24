@@ -1,0 +1,48 @@
+mat-toolbar {
+	overflow: hidden;
+}
+
+.head-spacer {
+	flex: 1 1 auto;
+}
+
+.toggle-btn {
+	display: none;
+}
+
+.items {
+	padding: 14px;
+}
+
+@media(max-width: 700px) {
+	.items-box {
+		display: none;
+	}
+
+	.toggle-items {
+		display: flex;
+		flex-direction: column;
+
+		.items {
+			width: 100%;
+		}
+	}
+
+	.head-spacer {
+		display: none;
+	}
+
+	.toggle-btn {
+		display: inline-block;
+		width: 5rem;
+	}
+
+	.title {
+		display: inline-block;
+		width: 50%;
+	}
+
+	.toggle-title {
+		padding: 1rem 0;
+	}
+}
